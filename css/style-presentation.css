@@ -1,0 +1,94 @@
+/* ==========================================================================
+   CSS Présentation - Projet Web
+   Description : Styles pour la page Training Fonctionnel, sans typographie (définie dans style-header-footer.css)
+   Structure :
+   1. Section Training
+   2. Carrousel
+   3. Responsive Design (Media Queries)
+   ========================================================================== */
+
+/* ==========================================================================
+   1. Section Training
+   ========================================================================== */
+
+.overlay-banner {
+    background-color: #000000; 
+    opacity: 0.6;
+}
+
+.image-banner {
+    object-fit: cover; 
+    height: 300px;
+}
+
+.section-training h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-training p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.float-slider {
+    float: right;
+    width: 40%;
+    margin-left: 32px;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    /* Style existant : bouton stylisé */
+    background-color: #8b6928;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.3s;
+    width: 100% !important;
+}
+
+.btn-custom:hover {
+    background-color: #b8972e;
+}
+
+/* ==========================================================================
+   2. Carrousel
+   ========================================================================== */
+
+/* Carrousel 3 images */
+#carouselExampleSlidesOnly .carousel-inner, 
+#carouselExampleSlidesOnly .carousel-item,
+#carouselExampleSlidesOnly .carousel-item img {
+    height: auto;
+}
+
+/* ==========================================================================
+   3. Responsive Design
+   ========================================================================== */
+
+/* --- Très petits écrans (≤ 575.98px) --- */
+@media (max-width: 575.98px) {
+    .section-training h2 {
+        font-size: 28px;
+    }
+
+    .section-training .float-slider {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 32px;
+    }
+
+    #carouselExampleSlidesOnly {
+        margin-top: 40px;
+        height: auto;
+    }
+}
