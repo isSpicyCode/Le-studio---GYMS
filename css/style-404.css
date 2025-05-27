@@ -10,86 +10,87 @@
 /* ==========================================================================
    1. Base styles
    ========================================================================== */
-   html,
-   body {
-     height: 100%;
-     background-color: #555;
-   }
-   
-   /* ==========================================================================
+html,
+body {
+  height: 100%;
+  background-color: #555;
+}
+
+/* ==========================================================================
       2. Section 404
       ========================================================================== */
-   .image-section {
-     position: relative;
-     height: 100vh;
-     overflow: hidden;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   
-   .overlay {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: #000000;
-     opacity: 0.5;
-     z-index: 1;
-   }
-   
-   .responsive-img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-   }
-   
-   .message404 {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     text-align: center;
-     color: #ffffff;
-     z-index: 1;
-   }
-   
-   .message404 h1 {
-     font-size: 10rem;
-     font-weight: 700;
-     color: #cfad6c;
-     margin: 0;
-   }
-   
-   .message404 h2 {
-     font-size: 4rem;
-     font-weight: 300;
-     margin: 0;
-     color: white;
-     margin-bottom: 40px;
-   }
-   
-   .btn-404 a {
-     background-color: #cfad6c;
-     color: #333;
-     font-weight: bold;
-     border: none;
-     padding: 15px 25px;
-     text-decoration: none;
-     outline: none;
-   }
-   
-   /* ==========================================================================
-      3. Responsive Design
+.image-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.responsive-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.message404 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.message404 h1 {
+  font-size: 10rem;
+  font-weight: 700;
+  color: #cfad6c;
+  margin: 0;
+}
+
+.message404 h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 0;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.btn-404 a {
+  background-color: #cfad6c;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  padding: 15px 25px;
+  text-decoration: none;
+  outline: none;
+}
+
+/* ==========================================================================
+      3. Responsive Design pour mobile
       ========================================================================== */
-   
-   /* --- Mobiles (≤ 575.98px) --- */
-   @media (max-width: 575.98px) {
-     .message404 h1 {
-       font-size: 8rem;
-     }
-     .message404 h2 {
-       font-size: 2.5rem;
-     }
-   }
+
+/* --- Mobiles (≤ 575.98px) --- */
+@media (max-width: 575.98px) {
+  .message404 h1 {
+    font-size: 8rem;
+  }
+
+  .message404 h2 {
+    font-size: 2.5rem;
+  }
+}
